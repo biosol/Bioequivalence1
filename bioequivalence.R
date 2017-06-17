@@ -122,7 +122,7 @@ lines(theo2, add.tes.log, col = "red")
 legend("topright", legend = c("Reference", "Test"), col = c("blue","red"), pch = c(19,17), bty = "o")
 
 dev.off()
-## We open a PDF which will store the results of the loop. We transform t and c into vectors (no se porqué, pero sino no funciona)
+## We open a PDF which will store the results of the loop. We transform t and c into vectors (no se porquÃ©, pero sino no funciona)
 ## In the plot the dots will be blue if the treatment is "REF" and red if it is the "TEST"
 ## We close the device outside the loop so it will create only one pdf and append all the graphs at the end
 
@@ -469,8 +469,3 @@ results = rbind(cmax.res, auc.res)
 
 write.table(results, "bioequivalence_res.txt", 
             row.names = FALSE, sep="\t", dec=",")
-
-
-#### Corregir log-lin
-### Para hacer log-lin,coge hasta cmax lin y desde cmax log
-
